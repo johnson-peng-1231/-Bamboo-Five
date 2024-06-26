@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蕭亦旂</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bamboo Five</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">My Friends</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="friend-details">
+            <div class="row">
+                <div class="column">
+                    <h2>Personality Traits</h2>
+                    <canvas id="radarChart"></canvas>
+                </div>
+                <div class="column">
+                    <h2>蕭亦旂</h2>
+                    <img src="../images/蕭亦旂/蕭亦旂.png" alt="蕭亦旂">
+                </div>
+            </div>
+            <h2>To Be Continued</h2>
+            <p>朋友1，你是我大學生活中最好的夥伴...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bamboo Five</p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        const ctx = document.getElementById('radarChart').getContext('2d');
+        const radarChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['親善', '鐵吸管', '國小喝酒', '台大', '地震忍受力', 'MBTI'],
+                datasets: [{
+                    label: 'Personality Traits',
+                    data: [10, 5, 10, 10, 0, 10],
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scale: {
+                    ticks: { beginAtZero: true }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

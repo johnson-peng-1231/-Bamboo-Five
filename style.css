@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.friends {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.friend {
+    text-align: center;
+    margin: 10px;
+}
+
+.friend img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#random-photo {
+    text-align: center;
+}
+
+#random-photo img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+#random-photo button {
+    display: block;
+    margin: 0 auto 10px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#random-photo button:hover {
+    background-color: #555;
+}
+
+/* 新增以下樣式 */
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;  /* 讓上半部等高 */
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* 確保圖片不會超過一定高度，與canvas保持一致 */
+}
+
+canvas {
+    max-width: 100%;
+    max-height: 400px; /* 確保canvas高度不超過圖片 */
+}
+
+/* 新增以下樣式 */
+#home h2 {
+    text-align: center;
+}
+
